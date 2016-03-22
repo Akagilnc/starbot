@@ -17,7 +17,14 @@ bot.started((payload) => {
 })
 
 
-
+let remoteusername = 'remoteuser_def'
+slack.users.info({
+  token: config('SLACK_TOKEN'),
+  user: msg.user
+}, (err, data) => {
+  if (err) throw err
+  remoteusername = data.user.name
+})
 
 
 bot.message((msg) => {
@@ -31,17 +38,6 @@ bot.message((msg) => {
   if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
     text = hello + msg.user_id + '\n ' + brazil
   }
-
-  let remoteusername = 'remoteuser_def'
-  slack.users.info({
-    token: config('SLACK_TOKEN'),
-    user: msg.user
-  }, (err, data) => {
-    if (err) throw err
-    remoteusername = data.user.name
-  })
-
-
 
   slack.chat.postMessage({
     token: config('SLACK_TOKEN'),
