@@ -9,15 +9,12 @@ let bot = slack.rtm.client()
 
 
 var bot_name = `mikhail`
-var hello = `hello.`
+var hello = `hello. `
 var brazil = "Oh... I know a few things about Brazil.";
 
 bot.started((payload) => {
   this.self = payload.self
 })
-
-
-
 
 
 bot.message((msg) => {
@@ -32,32 +29,31 @@ bot.message((msg) => {
     text = brazil
   }
 
-  let remoteusername = 'remoteuser_def'
   slack.users.info({
     token: config('SLACK_TOKEN'),
     user: msg.user
   }, (err, data) => {
     if (err) throw err
-    remoteusername = data.user.name
+    send(msg, data.user.name, text);
 
-    slack.chat.postMessage({
-      token: config('SLACK_TOKEN'),
-      icon_emoji: config('ICON_EMOJI'),
-      channel: msg.channel,
-      username: 'Starbot',
-      text: hello + data.user.name + " You said \'" + msg.text + "\'. \n " + text
-    }, (err, data) => {
-      if (err) throw err
+  })
+})
 
-      let txt = _.truncate(data.message.text)
+function send(msg, username, text) {
+  slack.chat.postMessage({
+    token: config('SLACK_TOKEN'),
+    icon_emoji: config('ICON_EMOJI'),
+    channel: msg.channel,
+    username: 'Starbot',
+    text: hello + username + " You said \'" + msg.text + "\'. \n " + text
+  }, (err, data) => {
+    if (err) throw err
 
-      console.log(`🤖  beep boop: I responded with "${txt}"`)
-    })
+    let txt = _.truncate(data.message.text)
+
+    console.log(`🤖  beep boop: I responded with "${txt}"`)
   })
 
-
-
-
-})
+}
 
 module.exports = bot
