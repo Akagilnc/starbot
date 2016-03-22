@@ -18,7 +18,7 @@ bot.started((payload) => {
 bot.message((msg) => {
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
-  if (msg.text.match("%hello%")) {
+  if (msg.text == "@starbot: hello") {
     text = hello + msg.text.user + `. I am ` + bot_name
   }
 
@@ -28,7 +28,7 @@ bot.message((msg) => {
     icon_emoji: config('ICON_EMOJI'),
     channel: msg.channel,
     username: 'Starbot',
-    text: "You said \'" + msg.text + "\'. " + text
+    text: "You said \'" + msg.text + "\'. \n " + text
   }, (err, data) => {
     if (err) throw err
 
