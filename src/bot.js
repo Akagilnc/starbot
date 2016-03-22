@@ -16,16 +16,18 @@ bot.started((payload) => {
   this.self = payload.self
 })
 
+
+
 bot.message((msg) => {
   var text = `beep boop: I hear you loud and clear! I am still learning to say more words XD`
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
   if (msg.text.toString().indexOf("hello" , 11) != -1) {
-    text = hello + user_id.toString() + `. I am ` + bot_name
+    text = hello + msg.user.toString() + `. I am ` + bot_name
   }
 
   if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
-    text = hello + msg.attachments + '\n ' + brazil
+    text = hello + msg.users.info('SLACK_TOKEN',msg.user).user.id + '\n ' + brazil
   }
 
 
