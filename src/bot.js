@@ -18,7 +18,7 @@ bot.started((payload) => {
 bot.message((msg) => {
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
-  if (msg.text == "@starbot: hello") {
+  if (msg.text.toString() == "@starbot: hello") {
     text = hello + msg.text.user + `. I am ` + bot_name
   }
 
