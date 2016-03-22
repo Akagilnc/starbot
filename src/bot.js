@@ -38,7 +38,7 @@ bot.message((msg) => {
     user: msg.user
   }, (err, data) => {
     if (err) throw err
-    remoteusername = data.username
+    remoteusername = data.user.name
   })
 
 
