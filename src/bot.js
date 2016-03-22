@@ -25,11 +25,11 @@ bot.message((msg) => {
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
   if (msg.text.toString().indexOf("hello" , 11) != -1) {
-    text = hello + msg.username.toString() + `. I am ` + bot_name
+    text = hello + msg.user.username + `. I am ` + bot_name
   }
 
   if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
-    text = hello + msg.user_id.toString() + '\n ' + brazil
+    text = hello + msg.user_id + '\n ' + brazil
   }
 
 
