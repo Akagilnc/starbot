@@ -32,7 +32,7 @@ bot.message((msg) => {
     text = hello + msg.user_id + '\n ' + brazil
   }
 
-  let remoteusername = ''
+  let remoteusername = 'remoteuser_def'
   slack.users.info({
     token: config('SLACK_TOKEN'),
     user: msg.user
