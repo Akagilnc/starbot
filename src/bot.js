@@ -25,11 +25,11 @@ bot.message((msg) => {
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
   if (msg.text.toString().toLowerCase().indexOf("hello" , 11) != -1) {
-    text = hello + msg.user.username + `. I am ` + bot_name
+    text = `. I am ` + bot_name
   }
 
   if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
-    text = hello + msg.user_id + '\n ' + brazil
+    text = brazil
   }
 
   let remoteusername = 'remoteuser_def'
@@ -45,7 +45,7 @@ bot.message((msg) => {
       icon_emoji: config('ICON_EMOJI'),
       channel: msg.channel,
       username: 'Starbot',
-      text: "You said \'" + msg.text + "\'. \n " + text + '\n' + data.user.name + '\n remoteusername = ' + remoteusername
+      text: hello + data.user.name + " You said \'" + msg.text + "\'. \n " + text
     }, (err, data) => {
       if (err) throw err
 
