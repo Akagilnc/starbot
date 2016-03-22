@@ -25,7 +25,7 @@ bot.message((msg) => {
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
   if (msg.text.toString().toLowerCase().indexOf("hello" , 11) != -1) {
-    text = `. I am ` + bot_name
+    text = `I am ` + bot_name
   }
 
   if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
