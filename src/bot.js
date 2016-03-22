@@ -28,7 +28,7 @@ bot.message((msg) => {
     icon_emoji: config('ICON_EMOJI'),
     channel: msg.channel,
     username: 'Starbot',
-    text: text
+    text: "You said \'" + msg.text + "\'. " + text
   }, (err, data) => {
     if (err) throw err
 
