@@ -25,7 +25,7 @@ bot.message((msg) => {
   }
 
   if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
-    text = hello + msg.id + '\n ' + brazil
+    text = hello + msg.attachments + '\n ' + brazil
   }
 
 
