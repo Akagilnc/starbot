@@ -7,7 +7,7 @@ const config = require('./config')
 
 let bot = slack.rtm.client()
 
-var text = `beep boop: I hear you loud and clear! I am still learning to say more words XD`
+
 var bot_name = `mikhail`
 var hello = `hello.`
 
@@ -16,6 +16,7 @@ bot.started((payload) => {
 })
 
 bot.message((msg) => {
+  var text = `beep boop: I hear you loud and clear! I am still learning to say more words XD`
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
   if (msg.text.toString().indexOf("hello" , 11) != -1) {
