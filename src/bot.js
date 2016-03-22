@@ -10,6 +10,7 @@ let bot = slack.rtm.client()
 
 var bot_name = `mikhail`
 var hello = `hello.`
+var brazil = "Oh... I know a few things about Brazil.";
 
 bot.started((payload) => {
   this.self = payload.self
@@ -23,13 +24,17 @@ bot.message((msg) => {
     text = hello + msg.text.user + `. I am ` + bot_name
   }
 
+  if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
+    text = hello + msg.text.user + '\n ' + brazil
+  }
+
 
   slack.chat.postMessage({
     token: config('SLACK_TOKEN'),
     icon_emoji: config('ICON_EMOJI'),
     channel: msg.channel,
     username: 'Starbot',
-    text: "You said \'" + msg.text + "\'. \n " + text + "\n" + msg.text.toString().indexOf("hello" , 11) + msg.text.toString().indexOf("h" , 11)
+    text: "You said \'" + msg.text + "\'. \n " + text
   }, (err, data) => {
     if (err) throw err
 
