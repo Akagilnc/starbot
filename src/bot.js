@@ -32,13 +32,13 @@ bot.message((msg) => {
     text = hello + msg.user_id + '\n ' + brazil
   }
 
-
+  let remoteusername = ''
   slack.users.info({
     token: config('SLACK_TOKEN'),
     user: msg.user
   }, (err, data) => {
     if (err) throw err
-    let username = data.username
+    remoteusername = data.username
   })
 
 
@@ -48,7 +48,7 @@ bot.message((msg) => {
     icon_emoji: config('ICON_EMOJI'),
     channel: msg.channel,
     username: 'Starbot',
-    text: "You said \'" + msg.text + "\'. \n " + text
+    text: "You said \'" + msg.text + "\'. \n " + text + '\n' + remoteusername
   }, (err, data) => {
     if (err) throw err
 
