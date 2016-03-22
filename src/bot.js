@@ -17,21 +17,14 @@ bot.started((payload) => {
 })
 
 
-let remoteusername = 'remoteuser_def'
-slack.users.info({
-  token: config('SLACK_TOKEN'),
-  user: msg.user
-}, (err, data) => {
-  if (err) throw err
-  remoteusername = data.user.name
-})
+
 
 
 bot.message((msg) => {
   var text = `beep boop: I hear you loud and clear! I am still learning to say more words XD`
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
-  if (msg.text.toString().indexOf("hello" , 11) != -1) {
+  if (msg.text.toString().toLowerCase().indexOf("hello" , 11) != -1) {
     text = hello + msg.user.username + `. I am ` + bot_name
   }
 
@@ -39,19 +32,32 @@ bot.message((msg) => {
     text = hello + msg.user_id + '\n ' + brazil
   }
 
-  slack.chat.postMessage({
+  // let remoteusername = 'remoteuser_def'
+  slack.users.info({
     token: config('SLACK_TOKEN'),
-    icon_emoji: config('ICON_EMOJI'),
-    channel: msg.channel,
-    username: 'Starbot',
-    text: "You said \'" + msg.text + "\'. \n " + text + '\n' + remoteusername
+    user: msg.user
   }, (err, data) => {
     if (err) throw err
+    // remoteusername = data.user.name
 
-    let txt = _.truncate(data.message.text)
+    slack.chat.postMessage({
+      token: config('SLACK_TOKEN'),
+      icon_emoji: config('ICON_EMOJI'),
+      channel: msg.channel,
+      username: 'Starbot',
+      text: "You said \'" + msg.text + "\'. \n " + text + '\n' + data.user.name
+    }, (err, data) => {
+      if (err) throw err
 
-    console.log(`🤖  beep boop: I responded with "${txt}"`)
+      let txt = _.truncate(data.message.text)
+
+      console.log(`🤖  beep boop: I responded with "${txt}"`)
+    })
   })
+
+
+
+
 })
 
 module.exports = bot
