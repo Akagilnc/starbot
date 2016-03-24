@@ -3,6 +3,8 @@
  */
 'use strict'
 
+const config = require('./config')
+
 function send(msg, text, slack) {
     slack.chat.postMessage({
         token: config('SLACK_TOKEN'),
