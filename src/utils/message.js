@@ -16,7 +16,7 @@ function makeMessage(msg, username) {
     var checkMsg = arguments[0].toString().toLowerCase();
 
     if (checkMsg.indexOf("hello" , 11) != -1) {
-        text = `I am` + bot_name
+        text = `I am ` + bot_name
     }
 
     if (checkMsg.indexOf("brazil" , 11) != -1) {
