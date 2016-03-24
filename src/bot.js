@@ -26,7 +26,7 @@ bot.message((msg) => {
     user: msg.user
   }, (err, data) => {
     if (err) throw err
-    var message = getMessage(msg.text, data.user.name);
+    var message = makeMessage(msg.text, data.user.name);
     send(msg, message, slack);
 
   })

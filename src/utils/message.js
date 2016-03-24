@@ -5,7 +5,7 @@
 var bot_name = `mikhail`
 var hello = `hello. `
 var brazil = "Oh... I know a few things about Brazil.";
-function getMessage() {
+function makeMessage() {
     var text = `beep boop: I hear you loud and clear! I am still learning to say more words XD`;
 
     if (arguments == null || arguments.length == 0 || arguments[0] == null){
