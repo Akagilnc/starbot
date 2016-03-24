@@ -4,7 +4,8 @@
 const slack = require('slack')
 const _ = require('lodash')
 const config = require('./config')
-require('./utils')
+require('./utils/message')
+require('./utils/sendmessage')
 
 let bot = slack.rtm.client()
 
