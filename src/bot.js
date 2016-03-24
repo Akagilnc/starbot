@@ -4,6 +4,8 @@
 const slack = require('slack')
 const _ = require('lodash')
 const config = require('./config')
+const makeMessage = require('./utils/message')
+const sendMessage = require('./utils/sendmessage')
 
 let bot = slack.rtm.client()
 
@@ -11,23 +13,24 @@ bot.started((payload) => {
   this.self = payload.self
 })
 
+
 bot.message((msg) => {
+  
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
 
-  slack.chat.postMessage({
+
+  
+  slack.users.info({
     token: config('SLACK_TOKEN'),
-    icon_emoji: config('ICON_EMOJI'),
-    channel: msg.channel,
-    username: 'Starbot',
-    text: `beep boop: I hear you loud and clear! I am still learning to say more words XD"`
+    user: msg.user
   }, (err, data) => {
     if (err) throw err
+    var text = makeMessage.makeMessage(msg.text, data.user.name);
+    sendMessage.send(msg, text, slack);
 
-    let txt = _.truncate(data.message.text)
-
-    console.log(`🤖  beep boop: I responded with "${txt}"`)
   })
 })
+
 
 module.exports = bot
