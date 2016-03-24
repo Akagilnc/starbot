@@ -19,3 +19,5 @@ function send(msg, text, slack) {
     })
 
 }
+
+exports.send = send;
