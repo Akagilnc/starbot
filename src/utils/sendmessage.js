@@ -3,7 +3,7 @@
  */
 'use strict'
 
-const config = require('./config')
+const config = require('../config')
 
 function send(msg, text, slack) {
     slack.chat.postMessage({
