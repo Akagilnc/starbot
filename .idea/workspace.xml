@@ -287,7 +287,7 @@
       <updated>1458554164311</updated>
       <workItem from="1458568978235" duration="2614000" />
       <workItem from="1458610031268" duration="12294000" />
-      <workItem from="1458641674401" duration="3054000" />
+      <workItem from="1458641674401" duration="3083000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <created>1458554382616</created>
@@ -359,11 +359,18 @@
       <option name="project" value="LOCAL" />
       <updated>1458644583779</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add test method 6">
+      <created>1458785499159</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1458785499159</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17962000" />
+    <option name="totallyTimeSpent" value="17991000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="824" extended-state="6" />
@@ -410,7 +417,8 @@
     <MESSAGE value="add test method 3" />
     <MESSAGE value="add test method 4" />
     <MESSAGE value="add test method 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="add test method 5" />
+    <MESSAGE value="add test method 6" />
+    <option name="LAST_COMMIT_MESSAGE" value="add test method 6" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
