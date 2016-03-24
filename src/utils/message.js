@@ -26,3 +26,5 @@ function makeMessage(msg, username) {
 
     return text;
 }
+
+exports.makeMessage = makeMessage;
