@@ -4,13 +4,9 @@
 const slack = require('slack')
 const _ = require('lodash')
 const config = require('./config')
+require('./utils')
 
 let bot = slack.rtm.client()
-
-
-var bot_name = `mikhail`
-var hello = `hello. `
-var brazil = "Oh... I know a few things about Brazil.";
 
 bot.started((payload) => {
   this.self = payload.self
@@ -18,42 +14,22 @@ bot.started((payload) => {
 
 
 bot.message((msg) => {
-  var text = `beep boop: I hear you loud and clear! I am still learning to say more words XD`
+  
   if (!msg.user) return
   if (!_.includes(msg.text.match(/<@([A-Z0-9])+>/igm), `<@${this.self.id}>`)) return
-  if (msg.text.toString().toLowerCase().indexOf("hello" , 11) != -1) {
-    text = `I am ` + bot_name
-  }
 
-  if (msg.text.toString().toLowerCase().indexOf("brazil" , 11) != -1) {
-    text = brazil
-  }
 
+  
   slack.users.info({
     token: config('SLACK_TOKEN'),
     user: msg.user
   }, (err, data) => {
     if (err) throw err
-    send(msg, data.user.name, text);
+    var message = getMessage(msg.text, data.user.name);
+    send(msg, message, slack);
 
   })
 })
 
-function send(msg, username, text) {
-  slack.chat.postMessage({
-    token: config('SLACK_TOKEN'),
-    icon_emoji: config('ICON_EMOJI'),
-    channel: msg.channel,
-    username: 'Starbot',
-    text: hello + username + " You said \'" + msg.text + "\'. \n " + text
-  }, (err, data) => {
-    if (err) throw err
-
-    let txt = _.truncate(data.message.text)
-
-    console.log(`🤖  beep boop: I responded with "${txt}"`)
-  })
-
-}
 
 module.exports = bot
