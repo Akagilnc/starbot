@@ -4,8 +4,8 @@
 const slack = require('slack')
 const _ = require('lodash')
 const config = require('./config')
-const message = require('./utils/message')
-const sendmessage = require('./utils/sendmessage')
+require('./utils/message')
+require('./utils/sendmessage')
 
 let bot = slack.rtm.client()
 
@@ -26,8 +26,8 @@ bot.message((msg) => {
     user: msg.user
   }, (err, data) => {
     if (err) throw err
-    var text = makeMessage(msg.text, data.user.name);
-    sendmessage.send(msg, text, slack);
+    var text = makeMessage.makeMessage(msg.text, data.user.name);
+    sendMessage.send(msg, text, slack);
 
   })
 })
