@@ -2,7 +2,7 @@
  * Created by deronlee on 3/24/16.
  */
 'use strict'
-
+const _ = require('lodash')
 const config = require('../config')
 
 function send(msg, text, slack) {
