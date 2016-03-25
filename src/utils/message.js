@@ -4,8 +4,8 @@
 
 const key_value = require("./commandkeyvalue")
 
-var text = ``;
-var hello = `hello. `;
+var text = '';
+var hello = 'hello. ';
 
 function makeMessage(msg, username) {
 
@@ -23,10 +23,11 @@ function makeMessage(msg, username) {
         if (checkMsg.indexOf(key.toString() , 11) != -1) {
             text = text + myObj[key] + "\n";
         }
-        else {
-            text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD` + checkMsg + "   " + key + "    " + checkMsg.indexOf(key.toString() , 11).toString();
-        }
 
+    }
+
+    if (text == '') {
+            text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD`
     }
 
 
