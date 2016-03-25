@@ -3,6 +3,7 @@
  */
 'use strict'
 const _ = require('lodash')
+require('colors')
 const config = require('../config')
 
 function send(msg, text, slack) {
@@ -11,7 +12,7 @@ function send(msg, text, slack) {
         icon_emoji: config('ICON_EMOJI'),
         channel: msg.channel,
         username: 'Starbot',
-        text: text
+        text: text.blue
     }, (err, data) => {
         if (err) throw err
 
