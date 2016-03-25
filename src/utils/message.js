@@ -2,10 +2,11 @@
  * Created by deronlee on 3/24/16.
  */
 
-var text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD`;
-var bot_name = `mikhail`
-var hello = `hello. `
-var brazil = "Oh... I know a few things about Brazil.";
+const key_value = require("./getkeyvalue")
+
+var text = ``;
+var hello = `hello. `;
+
 function makeMessage(msg, username) {
 
 
@@ -15,13 +16,19 @@ function makeMessage(msg, username) {
 
     var checkMsg = arguments[0].toString().toLowerCase();
 
-    if (checkMsg.indexOf("hello" , 11) != -1) {
-        text = `I am ` + bot_name
+    var myObj = key_value.getkeyvalue();
+
+    for (var key in myObj) {
+
+        if (checkMsg.indexOf(key , 11) != -1) {
+            text = text + myObj[key] + "\n";
+        }
+        else {
+            text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD`;
+        }
+
     }
 
-    if (checkMsg.indexOf("brazil" , 11) != -1) {
-        text = brazil
-    }
 
     text = hello + arguments[1] + " You said \'" + msg + "\'. \n " + text
 
