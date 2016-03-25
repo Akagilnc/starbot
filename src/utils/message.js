@@ -4,16 +4,16 @@
 
 const key_value = require("./commandkeyvalue")
 
-var text = '';
+
 var hello = 'hello. ';
 
 function makeMessage(msg, username) {
 
-
     if (arguments == null || arguments.length == 0 || arguments[0] == null){
-        return text;
+        return 'Something wrong';
     }
 
+    var text = '';
     var checkMsg = arguments[0].toString().toLowerCase();
 
     var myObj = key_value.getkeyvalue();

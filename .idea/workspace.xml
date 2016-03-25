@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40e2ab0c-6041-473f-9b1d-c184bd5e2f02" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/commandkeyvalue.js" afterPath="$PROJECT_DIR$/src/utils/commandkeyvalue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/message.js" afterPath="$PROJECT_DIR$/src/utils/message.js" />
     </list>
     <ignored path="starbot.iws" />
@@ -51,10 +50,10 @@
       <file leaf-file-name="message.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/message.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+            <state relative-caret-position="180">
+              <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
               <folding>
-                <marker date="1458876172000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
+                <marker date="1458876314000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
               </folding>
             </state>
           </provider>
@@ -457,7 +456,7 @@
       <updated>1458554164311</updated>
       <workItem from="1458568978235" duration="2614000" />
       <workItem from="1458610031268" duration="12294000" />
-      <workItem from="1458641674401" duration="13782000" />
+      <workItem from="1458641674401" duration="13923000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <created>1458554382616</created>
@@ -547,7 +546,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28690000" />
+    <option name="totallyTimeSpent" value="28831000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -804,10 +803,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/message.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="7" column="21" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+        <state relative-caret-position="180">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding>
-            <marker date="1458876172000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
+            <marker date="1458876314000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
           </folding>
         </state>
       </provider>
