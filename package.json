@@ -35,5 +35,8 @@
   "license": "MIT",
   "engines": {
     "node": "5.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
