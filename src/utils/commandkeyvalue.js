@@ -12,15 +12,15 @@ var text = '({' +
     '"Latitude" : "+30.310606"' +
     '})';
 
-/* var myObj = eval(text);
+var myObj = eval(text);
 
 for (var key in myObj) {
-    console.log(key + ': ' + myObj[key] + '<br>');
+    console.log(key.toString() + '      ' + myObj[key].toString());
 }
-*/
-function getkeyvalue() {
+
+function getKeyValue() {
     var myObj = eval(text);
     return myObj;
 }
 
-exports.getkeyvalue = getkeyvalue;
+exports.getkeyvalue = getKeyValue;

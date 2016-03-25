@@ -20,7 +20,7 @@ function makeMessage(msg, username) {
 
     for (var key in myObj) {
 
-        if (checkMsg.indexOf(key , 11) != -1) {
+        if (checkMsg.indexOf(key.toString() , 11) != -1) {
             text = text + myObj[key] + "\n";
         }
         else {
