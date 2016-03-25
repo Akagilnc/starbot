@@ -18,7 +18,7 @@ function send(msg, text, slack) {
 
         let txt = _.truncate(data.message.text)
 
-        console.log(`🤖  beep boop: I responded with "${txt}"`)
+        console.log(`🤖  beep boop: I responded with "${txt}"`.red)
     })
 
 }
