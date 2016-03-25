@@ -2,7 +2,7 @@
  * Created by deronlee on 3/24/16.
  */
 
-const key_value = require("./getkeyvalue")
+const key_value = require("./commandkeyvalue")
 
 var text = ``;
 var hello = `hello. `;
