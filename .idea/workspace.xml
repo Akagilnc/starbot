@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="40e2ab0c-6041-473f-9b1d-c184bd5e2f02" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/commandkeyvalue.js" afterPath="$PROJECT_DIR$/src/utils/commandkeyvalue.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/utils/message.js" afterPath="$PROJECT_DIR$/src/utils/message.js" />
     </list>
     <ignored path="starbot.iws" />
@@ -51,10 +50,10 @@
       <file leaf-file-name="message.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/utils/message.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+            <state relative-caret-position="240">
+              <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
               <folding>
-                <marker date="1458875304000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
+                <marker date="1458875622000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
               </folding>
             </state>
           </provider>
@@ -87,7 +86,10 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="318">
               <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-              <folding />
+              <folding>
+                <marker date="1458643065000" expanded="true" signature="0:854" placeholder="{&quot;name&quot;: &quot;starbot&quot;...}" />
+                <marker date="1458643065000" expanded="true" signature="179:282" placeholder="{&quot;start&quot;: &quot;node ./src&quot;...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -363,11 +365,14 @@
       </FILE-GROUP>
     </UpdatedFiles>
   </component>
-  <component name="RunManager" selected="Node.js.commandkeyvalue.js">
+  <component name="RunManager" selected="Node.js.message.js">
     <configuration default="false" name="bot.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="bot.js" working-dir="$PROJECT_DIR$/src">
       <method />
     </configuration>
     <configuration default="false" name="commandkeyvalue.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="commandkeyvalue.js" working-dir="$PROJECT_DIR$/src/utils">
+      <method />
+    </configuration>
+    <configuration default="false" name="message.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="message.js" working-dir="$PROJECT_DIR$/src/utils">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -423,14 +428,16 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Node.js.bot.js" />
       <item index="1" class="java.lang.String" itemvalue="Node.js.commandkeyvalue.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.message.js" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Node.js.commandkeyvalue.js" />
-        <item index="1" class="java.lang.String" itemvalue="Node.js.bot.js" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.message.js" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.commandkeyvalue.js" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.bot.js" />
       </list>
     </recent_temporary>
   </component>
@@ -449,7 +456,7 @@
       <updated>1458554164311</updated>
       <workItem from="1458568978235" duration="2614000" />
       <workItem from="1458610031268" duration="12294000" />
-      <workItem from="1458641674401" duration="12914000" />
+      <workItem from="1458641674401" duration="13232000" />
     </task>
     <task id="LOCAL-00001" summary="test1">
       <created>1458554382616</created>
@@ -539,7 +546,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27822000" />
+    <option name="totallyTimeSpent" value="28140000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="825" extended-state="6" />
@@ -548,14 +555,14 @@
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25369978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.4947146" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33015007" sideWeight="0.5109232" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39972714" sideWeight="0.5024665" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287858" sideWeight="0.4947146" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33015007" sideWeight="0.48907682" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33015007" sideWeight="0.48625794" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33015007" sideWeight="0.48343903" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33015007" sideWeight="0.48062015" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39972714" sideWeight="0.49753347" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -590,7 +597,9 @@
     <option name="LAST_COMMIT_MESSAGE" value="add test method 6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -614,7 +623,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458643065000" expanded="true" signature="0:854" placeholder="{&quot;name&quot;: &quot;starbot&quot;...}" />
+            <marker date="1458643065000" expanded="true" signature="179:282" placeholder="{&quot;start&quot;: &quot;node ./src&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -654,7 +666,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="585">
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1458643065000" expanded="true" signature="0:854" placeholder="{&quot;name&quot;: &quot;starbot&quot;...}" />
+            <marker date="1458643065000" expanded="true" signature="179:282" placeholder="{&quot;start&quot;: &quot;node ./src&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -717,7 +732,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="37" column="3" selection-start-line="37" selection-start-column="3" selection-end-line="37" selection-end-column="3" />
-          <folding />
+          <folding>
+            <marker date="1458643065000" expanded="true" signature="0:854" placeholder="{&quot;name&quot;: &quot;starbot&quot;...}" />
+            <marker date="1458643065000" expanded="true" signature="179:282" placeholder="{&quot;start&quot;: &quot;node ./src&quot;...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -785,10 +803,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/utils/message.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+        <state relative-caret-position="240">
+          <caret line="26" column="140" selection-start-line="26" selection-start-column="140" selection-end-line="26" selection-end-column="140" />
           <folding>
-            <marker date="1458875304000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
+            <marker date="1458875622000" expanded="false" signature="0:42" placeholder="/** Created by deronlee on 3/24/16. ...*/" />
           </folding>
         </state>
       </provider>

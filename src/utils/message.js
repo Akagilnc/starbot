@@ -24,7 +24,7 @@ function makeMessage(msg, username) {
             text = text + myObj[key] + "\n";
         }
         else {
-            text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD`;
+            text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD` + checkMsg + "   " + key + "    " + checkMsg.indexOf(key.toString() , 11).toString();
         }
 
     }
