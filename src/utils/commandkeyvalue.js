@@ -5,11 +5,12 @@
 var text = '({' +
     '"hello" : "I am mikhail.",' +
     '"brazil" : "Oh... I know a few things about Brazil.",' +
-    '"ZipClass" : "STANDARD",' +
-    '"County" : "TRAVIS",' +
-    '"City" : "AUSTIN",' +
-    '"State" : "TX",' +
-    '"Latitude" : "+30.310606"' +
+    '"zipclass" : "STANDARD",' +
+    '"county" : "TRAVIS",' +
+    '"city" : "AUSTIN",' +
+    '"state" : "TX",' +
+    '"latitude" : "+30.310606",' +
+    '"hello" : "I am deronlee"' +
     '})';
 
 var myObj = eval(text);
