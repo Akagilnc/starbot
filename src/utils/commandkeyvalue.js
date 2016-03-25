@@ -10,7 +10,8 @@ var text = '({' +
     '"city" : "AUSTIN",' +
     '"state" : "TX",' +
     '"latitude" : "+30.310606",' +
-    '"hellod" : "I am deronlee"' +
+    '"hellod" : "I am deronlee",' +
+    '"boa notie" : "Boa notie amigo"'
     '})';
 
 var myObj = eval(text);
