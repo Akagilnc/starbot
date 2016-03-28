@@ -1,7 +1,7 @@
 {
   "name": "starbot",
   "description": "Starbot is GitHub's trending open-source page, reincarnated as a Slack bot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "src/index.js",
   "scripts": {
     "start": "node ./src",
@@ -19,6 +19,7 @@
   "dependencies": {
     "body-parser": "^1.15.0",
     "botkit": "0.0.7",
+    "colors": "^1.1.2",
     "dotenv": "^2.0.0",
     "express": "^4.13.4",
     "express-http-proxy": "^0.6.0",
@@ -35,5 +36,8 @@
   "license": "MIT",
   "engines": {
     "node": "5.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
   }
 }
