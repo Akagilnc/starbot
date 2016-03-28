@@ -16,9 +16,9 @@ var text = '({' +
 
 var myObj = eval(text);
 
-for (var key in myObj) {
-    console.log(key.toString() + '      ' + myObj[key].toString());
-}
+// for (var key in myObj) {
+//     console.log(key.toString() + '      ' + myObj[key].toString());
+// }
 
 function getKeyValue() {
     var myObj = eval(text);
