@@ -27,7 +27,7 @@ function makeMessage(msg, username) {
     }
 
     if (text == '') {
-            text = `beep boop: I hear you loud and clear! I am still learning how to say more words XD`
+            text = 'beep boop: I hear you loud and clear! I am still learning how to say more words XD';
     }
 
 
