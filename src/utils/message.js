@@ -31,7 +31,7 @@ function makeMessage(msg, username) {
     }
 
 
-    text = hello + arguments[1] + " You said \'" + msg + "\'. \n " + text
+    text = hello + arguments[1] + " You said \'" + msg + "\'. \n" + text
 
     return text;
 }
