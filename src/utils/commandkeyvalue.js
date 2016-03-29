@@ -4,7 +4,7 @@
 
 var text = '({' +
     '"hello" : "I am mikhail.",' +
-    '"brazil" : "Oh... I know a few things about Brazil.",' +
+    '"brazil" : "Oh... I know a few things about Brazil. But I am not a Brazilian.",' +
     '"zipclass" : "STANDARD",' +
     '"county" : "TRAVIS",' +
     '"city" : "AUSTIN",' +
