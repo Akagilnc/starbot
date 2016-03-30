@@ -11,7 +11,7 @@ function testmain () {
 
     console.log(text);
     if (text.indexOf('I am mikhail.') == -1
-        || text.indexOf('Oh... I know a few things about Brazil.') == -1
+        || text.indexOf('Oh... I know a few things about Brazil. But I am not a Brazilian.') == -1
         || text.indexOf('I am deronlee') == -1
         || text.indexOf('Boa noite amigo') == -1) {
         assert(false);
